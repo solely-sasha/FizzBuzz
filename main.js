@@ -33,44 +33,19 @@
 function fizzBuzz() {
 
  
-
-    //     for (var i = 1; i <= 100; i++) {
-    
-    //         if (i % 3 === 0) {
-    
-    
-    //             console.log("Fizz")
-    
-    
-    
-    //         } else if (i % 5 === 0) {
-    
-    //             console.log("Buzz")
-    //         }
-    
-    
-    //         if (i % 3 === 0 && i % 5 === 0) {
-    
-    //             console.log('FizzBuzz')
-    //         }
-    
-    //         else {
-    //             console.log(i)
-    //         }
-    
-    
-    //     }
-    // }
     for (var i = 1; i <= 100; i++) {
         let message = '';
-        if (i % 3 === 0) message = "Fizz";
-        if (i % 5 === 0) message = "Buzz";
-        if(i % 3 === 0 && i % 5 === 0) message = "FizzBuzz"
+
+        i % 3 === 0 ? message = "Fizz": i
+        i % 5 === 0 ? message = "Buzz": i
+        i % 3 === 0 && i % 5 === 0 ? message = "FizzBuzz": i
+ 
         console.log(message || i);
-      }
+      // }
     }
+  }
     fizzBuzz()
-    
+  
     //    4. Review the solution
     
     /*
